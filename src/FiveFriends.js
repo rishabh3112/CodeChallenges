@@ -8,7 +8,7 @@ const setThumbnails = async () => {
     
     users.results.forEach((user) => {
         const imageNode = document.createElement("img");
-        imageNode.src = user.picture.thumbnail;
+        imageNode.src = user.picture.medium;
         containerNode.appendChild(imageNode);
     })
 }

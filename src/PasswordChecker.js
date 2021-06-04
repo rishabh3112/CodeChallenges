@@ -2,7 +2,7 @@ const containerNode = document.getElementById("password-container");
 containerNode.style.visibility = "";
 
 /**
- * 
+ * Checks password and returns if valid or not
  * @param {string} str 
  */
 const checkPassword = (str) => {
@@ -12,7 +12,7 @@ const checkPassword = (str) => {
     isValid = isValid && (str.match(/[A-Z]/g) || []).length > 0;
     isValid = isValid && (str.match(/[0-9]/g) || []).length === 1;
     isValid = isValid && (str.match(/[^\w]/g) || []).length === 1;
-    return isValid;
+    return isValid ? "Valid password" : "Invalid password";
 }
 
 const buttonNode = document.getElementById("check-password");

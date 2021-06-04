@@ -1,4 +1,4 @@
 import "regenerator-runtime/runtime";
 import "core-js/stable";
-
-import "./PasswordChecker";
+import "./Movie";
+import "./style.css"
